@@ -1,7 +1,13 @@
-<!DOCTYPE html><html lang="uz"><head><meta charset="utf-8"><title>Minecraft</title>
+<!DOCTYPE html><html lang="uz"><head><meta charset="utf-8"><title>Minecraft</title><link rel="icon"
+  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkSy1JEB9q7jMexliHsCH3AK1UBbVMUuOUBW4r94BIbw&s" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
 <style>
-html,body{margin:0;height:100%;overflow:hidden;background:#78a7ff;font-family:"Courier New",monospace}
+html,body{margin:0;height:100%;overflow:hidden;background:#78a7ff; font-family: "Press Start 2P", system-ui;
+      font-weight: 400;
+      font-style: normal;}
 canvas{display:block;width:100%;height:100%}
 #cross{position:fixed;left:50%;top:50%;width:20px;height:20px;margin:-10px;pointer-events:none}
 #cross:before,#cross:after{content:"";position:absolute;background:#fff;mix-blend-mode:difference}
@@ -36,9 +42,11 @@ canvas{display:block;width:100%;height:100%}
 </style></head><body>
 <canvas id="c"></canvas><div id="cross"></div>
 <div id="toast"></div><div id="hurt"></div><div id="ui"><div id="panel"><h2 id="ut"></h2><div id="grid"></div><div id="rec"></div><p>E yoki Esc: yopish</p></div></div><div id="chat"></div><input id="ci" maxlength="100" placeholder="Xabar yozing, Enter bosing"><div id="hud"><div id="stats"><span id="hearts"></span><span id="food"></span></div><div id="bar"></div></div>
-<div id="menu"><h1>MINECRAFT</h1><button id="b1">Yakka o'yinchi</button><button id="b2">Ko'p o'yinchi (1-15)</button>
+<div id="menu"><img src="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/logos/Global-Header_MCCB-Logo_300x51.svg"
+  alt="Minecraft logo" /><button id="b1">Singleplayer</button><button id="b2">Multiplayer (1-15)</button>
 <div id="mp"><input id="nm" placeholder="Ismingiz" maxlength="12"><input id="rid" placeholder="Xona ID (masalan: dunyo1)" maxlength="40"><button id="b3">Qo'shilish</button><button id="b4">Server qo'shish (saqlash)</button><div id="sl"></div></div><p id="mps"></p></div>
-<div id="msg"><h1>MINECRAFT</h1><p>O'ynash uchun bosing</p><p>W A S D yurish, Space sakrash, sichqoncha bilan qarash</p><p>Chap tugmani bosib turing: buzish. O'ng tugma: blok qo'yish. 1-6: blok tanlash</p><p>E inventar, Q item tashlash, T chat. Zombilar kechasi chiqadi</p><p>Chap tugma mobga urish, o'ng tugma ovqat yeyish (olma, go'sht)</p><p>F to'liq ekran, Esc chiqish</p></div>
+<div id="msg"><h1>MINECRAFT</h1><p>O'ynash uchun bosing</p><p>W A S D yurish, Space sakrash, sichqoncha bilan qarash</p><p>Chap tugmani bosib turing: buzish. O'ng tugma: blok qo'yish. 1-9: blok tanlash</p><p>E inventar, Q item tashlash, T chat. Zombilar kechasi chiqadi</p><p>Chap tugma mobga urish, o'ng tugma ovqat yeyish (olma, go'sht)</p><p>F to'liq ekran, Esc chiqish</p><p>Chatga /creative deb yozing, va creative bo'ling. Block menusini ochish: B . Survival bo'lish uchun esa, /survival deb
+yozing.</p></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 const H=32,CS=16,RD=4,SEA=9,OFF=16000,NH=8000,NE=24000;
